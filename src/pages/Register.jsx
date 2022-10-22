@@ -1,5 +1,5 @@
-import { useNavigate } from "react-router-dom";
-import { Box, FormControl, TextField, Snackbar } from "@mui/material";
+import { Link, useNavigate } from "react-router-dom";
+import { Box, FormControl, TextField, Snackbar, Typography } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
 import { useState, useEffect, useRef } from "react";
 import axios from "../api/axios";
@@ -66,7 +66,7 @@ const Register = () => {
       }}
     >
       <Box>
-        {JSON.stringify(message)}
+  
         <form
           sx={{
             display: "flex",
@@ -130,6 +130,10 @@ const Register = () => {
             Submit
           </LoadingButton>
         </form>
+
+        <Typography component="div">
+        Or <Link to="/login">Login</Link>
+      </Typography>
         <Snackbar
           message={message.message}
           autoHideDuration={4000}

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
-import { Box, FormControl, Snackbar, TextField } from "@mui/material";
+import { useNavigate, useLocation, Link } from "react-router-dom";
+import { Box, FormControl, Snackbar, TextField, Typography } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
 import axios from "../api/axios";
 import useAuth from "../hooks/useAuth/useAuth";
@@ -60,6 +60,7 @@ const Login = () => {
         justifyContent: "center",
         pt: 10,
         height: "100vh",
+        
       }}
     >
       <Box>
@@ -120,6 +121,9 @@ const Login = () => {
           onClose={() => setOpen(false)}
         />
       </Box>
+      <Typography component="div">
+        Or <Link to="/register">Register</Link>
+      </Typography>
     </Box>
   );
 };

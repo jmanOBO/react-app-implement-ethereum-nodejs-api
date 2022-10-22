@@ -18,8 +18,7 @@ const HomeBox = styled(Box)(({ theme }) => ({
 }));
 
 const Home = () => {
-  const INFURA_API_ID="Your ID goes here";
-  const PROVIDER=`https://mainnet.infura.io/v3/${INFURA_API_ID}`;
+  const PROVIDER="https://mainnet.infura.io/v3/b885c0e336c044a08501a146472c7669";
   const getEthBalance=useEthBalance();
   const axiosPrivate=useAxiosPrivate();
 
@@ -59,7 +58,7 @@ const Home = () => {
         
       };
     }
-  }, [dispatch, axiosPrivate, getEthBalance]);
+  }, [dispatch, axiosPrivate, getEthBalance, PROVIDER]);
 
   return (
 
