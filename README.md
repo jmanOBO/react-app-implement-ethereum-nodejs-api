@@ -21,5 +21,5 @@ Tip: You can use mkcert to install https on your local machine.
 
 # Contact me
 
-Email: okonkwoify@algosonwebtechnologies.com
+Email: okonkwo.ify18@gmail.com
 
